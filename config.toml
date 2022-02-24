@@ -1,0 +1,58 @@
+baseURL = 'https://tylerhorvath.com'
+languageCode = 'en-us'
+title = 'tylers'
+[Params]
+  # Note: This is for the meta description, which is different from the "description" displayed in the terminal.
+  description = "ts-mini's terminal"
+  [Params.Terminal]
+  # Note: color scheme
+  # Note: You can choose between
+  # Note: hugo-theme-shell original: ["shell-powershell", "shell-ubuntu", "shell-retro"]
+  # Note: or
+  # Note: gogh theme: https://mayccoll.github.io/Gogh/
+  scheme = "shell-ubuntu"
+
+  # Note: in terminal
+  # [userName]@[pcName]:~/$ cd [workDir]
+  # [userName]@[pcName]:~/[workDir]$ cat [profile]
+  #
+  # [description]
+  #
+  # Note: if you set Params.Tree > use = true
+  # [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
+  # ./[folderName]/
+  # ...
+  # Note: result of the tree command
+  userName = "ts-mini"
+  pcName = "toaster"
+  workDir = "src"
+  profile = "i-forgot-my-name"
+
+  ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
+  stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
+  commandDelay = 35 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+  titleDelay = 0 # title speed : "title" in front matter
+  contentDelay = 0 # content speed : content in .md file
+
+  # activityDelay = 5 : deprecated
+
+  description = """
+  i'm tyler
+  i like taking things apart
+  and sometimes putting them back together
+
+  """
+
+  # Note: If you want to use a Markdown file, you can use the following
+  # description = "/description.md"
+  # Note: and put the description.md in /content/description.md
+
+  [Params.Tree]
+  use = true
+  folderName = "my_links"
+
+  files = [
+    ["LinkedIn", "https://www.linkedin.com/in/ts-mini/"],
+    ["Github", "https://github.com/ts-mini"],
+    ["Something neat", "https://www.formula1.com/en.html"]
+  ]
