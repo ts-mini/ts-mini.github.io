@@ -1,6 +1,7 @@
 baseURL = 'https://tylerhorvath.com'
 languageCode = 'en-us'
 title = 'tylers'
+theme = 'hugo-theme-shell'
 [Params]
   # Note: This is for the meta description, which is different from the "description" displayed in the terminal.
   description = "ts-mini's terminal"
